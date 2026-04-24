@@ -10,20 +10,30 @@
 <body>
 
 <header class="header">
-  <img src="logo.png" class="logo">
-  <h2>DEX trading</h2>
+  <div class="brand">
+    <img src="logo.png" class="logo">
+    <h2>DEX trading</h2>
+  </div>
+
+  <button onclick="toggleCart()" class="cart-btn">
+    🛒 <span id="cartCount">0</span>
+  </button>
 </header>
 
 <section class="hero">
-  <h1>ابدأ رحلتك في التداول الآن</h1>
-  <p>منتجات رقمية احترافية تساعدك على تحقيق دخل حقيقي</p>
+  <h1>حقق دخل إضافي من التداول</h1>
+  <p>منتجات احترافية + دعم كامل + نتائج حقيقية</p>
 </section>
 
 <section class="products" id="products"></section>
 
-<footer class="footer">
-  © 2026 DEX trading
-</footer>
+<!-- CART -->
+<div class="cart" id="cart">
+  <h2>سلة المشتريات</h2>
+  <div id="cartItems"></div>
+  <h3 id="total"></h3>
+  <button onclick="checkout()" class="btn buy">إتمام الطلب عبر واتساب</button>
+</div>
 
 <script src="script.js"></script>
 </body>
